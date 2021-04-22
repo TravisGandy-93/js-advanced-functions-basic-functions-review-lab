@@ -20,3 +20,10 @@ var Calculator = {
   divide: function(a,b){ return a / b }
   }
 
+  function actionApplyer(start, functions) {
+    let i = start;
+    for (let acc = 0; acc < functions.length; acc++) {
+      i = functions[acc](i);
+    }
+    return i;
+  }
